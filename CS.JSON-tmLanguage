@@ -1,0 +1,48 @@
+{ "name": "CS",
+  "scopeName": "source.cs",
+  "fileTypes": ["txt"],
+  "patterns": [
+  	{
+  		"comment":"comment",
+  		"match": "\\*comment.+",
+  		"name":"comment.line.cs"
+  	},
+  	{
+  		"comment":"pound key",
+  		"match": "#(.|w)+",
+  		"name" : "entity.name.function"
+  	},
+      {
+      "comment":"todo",
+      "match": "todo|TODO",
+      "name" : "invalid.illegal.cs"
+      },
+  	{
+  		"comment":"variables",
+  		"match": "\\$!?{\\w+}|",
+  		"name":"constant.language.cs"
+  	},
+  	{
+  		"comment":"keywords",
+  		"match":"\\*(allow_reuse|choice|create|delete|disable_reuse|else|elseif|elsif|ending|finish|fake_choice|gosub|goto_scene|goto|goto_random_scene|hide_reuse|if|input_text|input_number|image|label|line_break|link|more_games|page_break|print|rand|return|set|share_this_game|star_chart|selectable_if|temp)",
+  		"name":"keyword.control.cs"
+  	},
+  	{
+  		"comment":"logic",
+  		"match":"!=|=|>|<|>=|<=|%|&",
+  		"name":"keyword.operator.cs"
+  	},
+  	{
+  		"comment":"numbers and bools",
+  		"match": "[^(a-zA-Z)]\\d+|true|false|((\\+|-)\\d+)",
+  		"name":"variable.parameter.cs"
+  	},
+      {
+      "comment":"quotation marks",
+      "match": "(\")([^\"]|\"\")*(\")",
+      "name":"variable.parameter.cs"
+    }
+  	
+  ],
+  "uuid": "c4ce72c6-2a40-4270-8d8c-c700517a65a5"
+}
