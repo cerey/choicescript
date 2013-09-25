@@ -24,7 +24,7 @@
   	},
   	{
   		"comment":"keywords",
-  		"match":"\\*(allow_reuse|choice|create|delete|disable_reuse|else|elseif|elsif|ending|finish|stat_chart|text|opposed_pair|fake_choice|gosub|goto_scene|goto|goto_random_scene|hide_reuse|if|input_text|input_number|image|label|line_break|link|more_games|page_break|print|rand|return|set|share_this_game|star_chart|selectable_if|temp)",
+  		"match":"\\*(allow_reuse|choice|create|delete|disable_reuse|else|elseif|elsif|ending|finish|stat_chart|text|opposed_pair|fake_choice|gosub|goto_scene|goto|goto_random_scene|hide_reuse|if|input_text|input_number|image|label|line_break|link|more_games|page_break|print|rand|return|set|share_this_game|selectable_if|temp|setref|gotoref)",
   		"name":"keyword.control.cs"
   	},
   	{
